@@ -108,6 +108,10 @@ insert into dept  values(30, 'SALES', 'CHICAGO');
 insert into dept  values(40, 'OPERATIONS', 'BOSTON');
 commit;
 
+
+-- =========================================================================
+
+
 -- <<1>>  부서번호가 10번인부서의사람중사원번호, 이름, 급여를출력하라.
 select empno, ENAME, sal from EMP where DEPTNO =10;
 
