@@ -156,3 +156,6 @@ select deptno, COUNT(*) from emp GROUP BY deptno;
 select job, count(sal), avg(sal), max(SAL), min(SAL) from emp group by job;
 -- HAVING - Group by의 조건절
 select deptno, count(*) from emp group by deptno having count(*) > 3;
+-- DISTINCT - 중복제거, Group By랑 비슷하다.
+select distinct job from emp;
+
