@@ -159,3 +159,6 @@ select deptno, count(*) from emp group by deptno having count(*) > 3;
 -- DISTINCT - 중복제거, Group By랑 비슷하다.
 select distinct job from emp;
 
+-- 서브쿼리 - select 문 안에 select 문 넣
+select ename from (select empno, ename from emp where deptno =10);
+
